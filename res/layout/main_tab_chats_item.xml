@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/mm_listitem"
+    android:clickable="false"
+    android:gravity="center_vertical"
+    android:padding="6dip" >
+
+    <com.ikantech.support.widget.YiRoundImageView
+        android:id="@+id/tab_chats_head"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/mini_avatar_shadow" />
+
+    <TextView
+        android:id="@+id/tab_chats_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/tab_chats_head"
+        android:padding="3dp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tab_chats_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="3dp"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/tab_chats_active"
+        android:layout_width="wrap_content"
+        android:layout_height="16dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tab_chats_date"
+        android:layout_marginRight="6dip"
+        android:gravity="center"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tab_chats_sub_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/tab_chats_head"
+        android:ellipsize="end"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:textColor="#666" />
+
+    <ImageView
+        android:id="@+id/ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="3dip"
+        android:contentDescription="@null"
+        android:src="@drawable/common_ratio_select"
+        android:visibility="gone" />
+
+</RelativeLayout>

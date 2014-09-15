@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/view_chat_record_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@drawable/transparent_selector" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_footer_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp" >
+
+        <ImageButton
+            android:layout_width="26dip"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:onClick="onPrevClick"
+            android:src="@drawable/aa_prev" />
+
+        <EditText
+            android:id="@+id/view_chat_record_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:background="@null"
+            android:imeOptions="actionGo"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/view_chat_record_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:textColor="#CCC"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:layout_width="26dip"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:onClick="onNextClick"
+            android:src="@drawable/aa_next" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="onClearChatRecordClick"
+            android:text="@string/str_delete"
+            android:textColor="#CCC"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

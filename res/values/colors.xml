@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+    <color name="blue">#009</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="left_menu_bg">#333</color>
+    <color name="ade_dark_green">#ff3baa24</color>
+    <color name="ade_dark_blue">#ff2c9bff</color>
+    <color name="side_menu_layout_bg_hi">#2F2F2F</color>
+    <color name="sidebar_account_layout_bg">#23232323</color>
+    <color name="left_menu_category_text_color">#cecbce</color>
+    <color name="left_menu_section_bg">#292c29</color>
+    <color name="normal_text_color_gray">#ff949494</color>
+    <color name="forget_passwd">#FF5891fb</color>
+    <color name="app_bg">#FFEEEEEE</color>
+    <color name="color_dark">#161C27</color>
+    <color name="color_light">#4D6288</color>
+
+</resources>

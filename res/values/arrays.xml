@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="left_menu_sections">
+        <item>常用</item>
+<!--         <item>便捷</item> -->
+        <item>设置</item>
+    </string-array>
+    <string-array name="left_menu_commons">
+<!--         <item>新鲜事</item> -->
+        <item>@string/str_chats</item>
+        <item>好友</item>
+        <item>媒体</item>
+        <item>更多</item>
+    </string-array>
+    <string-array name="left_menu_others">
+        <item>应用中心</item>
+        <item>游戏中心</item>
+        <item>忆云商城</item>
+    </string-array>
+    <string-array name="left_menu_settings">
+        <item>设置</item>
+<!--         <item>反馈</item> -->
+        <item>退出</item>
+        <item>关于</item>
+    </string-array>
+    <string-array name="classical_emoji">
+
+        <!-- 0101 -->
+        <item>f023</item>
+        <item>f040</item>
+        <item>f019</item>
+        <item>f043</item>
+        <item>f021</item>
+        <item>f009</item>
+        <item>f020</item>
+        <!-- 0102 -->
+        <item>f106</item>
+        <item>f035</item>
+        <item>f010</item>
+        <item>f025</item>
+        <item>f024</item>
+        <item>f001</item>
+        <item>f000</item>
+        <!-- 0103 -->
+        <item>f033</item>
+        <item>f032</item>
+        <item>f012</item>
+        <item>f027</item>
+        <item>f013</item>
+        <item>f022</item>
+        <item>delete_button</item>
+
+        <!-- 0201 -->
+        <item>f003</item>
+        <item>f018</item>
+        <item>f030</item>
+        <item>f031</item>
+        <item>f081</item>
+        <item>f082</item>
+        <item>f026</item>
+        <!-- 0202 -->
+        <item>f002</item>
+        <item>f037</item>
+        <item>f050</item>
+        <item>f042</item>
+        <item>f083</item>
+        <item>f034</item>
+        <item>f011</item>
+        <!-- 0203 -->
+        <item>f049</item>
+        <item>f084</item>
+        <item>f039</item>
+        <item>f078</item>
+        <item>f005</item>
+        <item>f004</item>
+        <item>delete_button</item>
+
+        <!-- 0301 -->
+        <item>f006</item>
+        <item>f085</item>
+        <item>f086</item>
+        <item>f087</item>
+        <item>f046</item>
+        <item>f088</item>
+        <item>f044</item>
+        <!-- 0302 -->
+        <item>f089</item>
+        <item>f048</item>
+        <item>f014</item>
+        <item>f090</item>
+        <item>f041</item>
+        <item>f036</item>
+        <item>f091</item>
+        <!-- 0303 -->
+        <item>f051</item>
+        <item>f017</item>
+        <item>f060</item>
+        <item>f061</item>
+        <item>f092</item>
+        <item>f093</item>
+        <item>delete_button</item>
+
+        <!-- 0401 -->
+        <item>f066</item>
+        <item>f058</item>
+        <item>f007</item>
+        <item>f008</item>
+        <item>f057</item>
+        <item>f029</item>
+        <item>f028</item>
+        <!-- 0402 -->
+        <item>f074</item>
+        <item>f059</item>
+        <item>f080</item>
+        <item>f016</item>
+        <item>f070</item>
+        <item>f077</item>
+        <item>f062</item>
+        <!-- 0403 -->
+        <item>f015</item>
+        <item>f068</item>
+        <item>f075</item>
+        <item>f076</item>
+        <item>f045</item>
+        <item>f052</item>
+        <item>delete_button</item>
+
+        <!-- 0501 -->
+        <item>f053</item>
+        <item>f054</item>
+        <item>f055</item>
+        <item>f056</item>
+        <item>f063</item>
+        <item>f073</item>
+        <item>f072</item>
+        <!-- 0502 -->
+        <item>f065</item>
+        <item>f094</item>
+        <item>f064</item>
+        <item>f038</item>
+        <item>f047</item>
+        <item>f095</item>
+        <item>f071</item>
+        <!-- 0503 -->
+        <item>f096</item>
+        <item>f097</item>
+        <item>f098</item>
+        <item>f099</item>
+        <item>f100</item>
+        <item>f079</item>
+        <item>delete_button</item>
+
+        <!-- 0601 -->
+        <item>f101</item>
+        <item>f102</item>
+        <item>f103</item>
+        <item>f104</item>
+        <item>f105</item>
+        <item>f108</item>
+        <item>f109</item>
+        <!-- 0602 -->
+        <item>f110</item>
+        <item>f111</item>
+        <item>f112</item>
+        <item>f113</item>
+        <item>f114</item>
+        <item>f115</item>
+        <item>f116</item>
+        <!-- 0603 -->
+        <item>f117</item>
+        <item>f118</item>
+        <item>f119</item>
+        <item>f120</item>
+        <item>f121</item>
+        <item>f122</item>
+        <item>delete_button</item>
+
+        <!-- 0701 -->
+        <item>f123</item>
+        <item>f124</item>
+        <item>f125</item>
+        <item>f126</item>
+        <item>f127</item>
+        <item>f128</item>
+        <item>f129</item>
+        <!-- 0702 -->
+        <item>f130</item>
+        <item>f131</item>
+        <item>f132</item>
+        <item>f133</item>
+        <item>f134</item>
+        <item>f135</item>
+        <item>f136</item>
+        <!-- 0703 -->
+        <item>f137</item>
+        <item>f138</item>
+        <item>f139</item>
+        <item>f140</item>
+        <item>f141</item>
+        <item>f142</item>
+        <item>delete_button</item>
+    </string-array>
+    <string-array name="classical_static_emoji">
+
+        <!-- 0101 -->
+        <item>f_static_023</item>
+        <item>f_static_040</item>
+        <item>f_static_019</item>
+        <item>f_static_043</item>
+        <item>f_static_021</item>
+        <item>f_static_009</item>
+        <item>f_static_020</item>
+        <!-- 0102 -->
+        <item>f_static_106</item>
+        <item>f_static_035</item>
+        <item>f_static_010</item>
+        <item>f_static_025</item>
+        <item>f_static_024</item>
+        <item>f_static_001</item>
+        <item>f_static_000</item>
+        <!-- 0103 -->
+        <item>f_static_033</item>
+        <item>f032</item>
+        <item>f_static_012</item>
+        <item>f_static_027</item>
+        <item>f_static_013</item>
+        <item>f_static_022</item>
+        <item>delete_button</item>
+
+        <!-- 0201 -->
+        <item>f_static_003</item>
+        <item>f_static_018</item>
+        <item>f_static_030</item>
+        <item>f_static_031</item>
+        <item>f_static_081</item>
+        <item>f_static_082</item>
+        <item>f_static_026</item>
+        <!-- 0202 -->
+        <item>f_static_002</item>
+        <item>f_static_037</item>
+        <item>f_static_050</item>
+        <item>f_static_042</item>
+        <item>f_static_083</item>
+        <item>f_static_034</item>
+        <item>f_static_011</item>
+        <!-- 0203 -->
+        <item>f_static_049</item>
+        <item>f_static_084</item>
+        <item>f039</item>
+        <item>f078</item>
+        <item>f_static_005</item>
+        <item>f_static_004</item>
+        <item>delete_button</item>
+
+        <!-- 0301 -->
+        <item>f_static_006</item>
+        <item>f_static_085</item>
+        <item>f_static_086</item>
+        <item>f_static_087</item>
+        <item>f_static_046</item>
+        <item>f_static_088</item>
+        <item>f_static_044</item>
+        <!-- 0302 -->
+        <item>f_static_089</item>
+        <item>f_static_048</item>
+        <item>f_static_014</item>
+        <item>f_static_090</item>
+        <item>f_static_041</item>
+        <item>f_static_036</item>
+        <item>f_static_091</item>
+        <!-- 0303 -->
+        <item>f_static_051</item>
+        <item>f_static_017</item>
+        <item>f060</item>
+        <item>f_static_061</item>
+        <item>f_static_092</item>
+        <item>f_static_093</item>
+        <item>delete_button</item>
+
+        <!-- 0401 -->
+        <item>f_static_066</item>
+        <item>f058</item>
+        <item>f007</item>
+        <item>f008</item>
+        <item>f057</item>
+        <item>f_static_029</item>
+        <item>f028</item>
+        <!-- 0402 -->
+        <item>f_static_074</item>
+        <item>f_static_059</item>
+        <item>f080</item>
+        <item>f016</item>
+        <item>f_static_070</item>
+        <item>f_static_077</item>
+        <item>f_static_062</item>
+        <!-- 0403 -->
+        <item>f_static_015</item>
+        <item>f068</item>
+        <item>f075</item>
+        <item>f076</item>
+        <item>f_static_045</item>
+        <item>f_static_052</item>
+        <item>delete_button</item>
+
+        <!-- 0501 -->
+        <item>f_static_053</item>
+        <item>f_static_054</item>
+        <item>f_static_055</item>
+        <item>f_static_056</item>
+        <item>f_static_063</item>
+        <item>f_static_073</item>
+        <item>f_static_072</item>
+        <!-- 0502 -->
+        <item>f_static_065</item>
+        <item>f_static_094</item>
+        <item>f064</item>
+        <item>f_static_038</item>
+        <item>f047</item>
+        <item>f_static_095</item>
+        <item>f071</item>
+        <!-- 0503 -->
+        <item>f_static_096</item>
+        <item>f_static_097</item>
+        <item>f_static_098</item>
+        <item>f_static_099</item>
+        <item>f_static_100</item>
+        <item>f_static_079</item>
+        <item>delete_button</item>
+
+        <!-- 0601 -->
+        <item>f_static_101</item>
+        <item>f_static_102</item>
+        <item>f_static_103</item>
+        <item>f_static_104</item>
+        <item>f_static_105</item>
+        <item>f108</item>
+        <item>f109</item>
+        <!-- 0602 -->
+        <item>f110</item>
+        <item>f111</item>
+        <item>f112</item>
+        <item>f113</item>
+        <item>f114</item>
+        <item>f115</item>
+        <item>f116</item>
+        <!-- 0603 -->
+        <item>f117</item>
+        <item>f118</item>
+        <item>f119</item>
+        <item>f120</item>
+        <item>f121</item>
+        <item>f122</item>
+        <item>delete_button</item>
+
+        <!-- 0701 -->
+        <item>f123</item>
+        <item>f124</item>
+        <item>f125</item>
+        <item>f126</item>
+        <item>f127</item>
+        <item>f128</item>
+        <item>f129</item>
+        <!-- 0702 -->
+        <item>f130</item>
+        <item>f131</item>
+        <item>f132</item>
+        <item>f133</item>
+        <item>f134</item>
+        <item>f135</item>
+        <item>f136</item>
+        <!-- 0703 -->
+        <item>f137</item>
+        <item>f138</item>
+        <item>f139</item>
+        <item>f140</item>
+        <item>f141</item>
+        <item>f142</item>
+        <item>delete_button</item>
+    </string-array>
+    <string-array name="classical_emoji_desc">
+
+        <!-- 0101 -->
+        <item>[微笑]</item>
+        <item>[撇嘴]</item>
+        <item>[色]</item>
+        <item>[发呆]</item>
+        <item>[得意]</item>
+        <item>[大哭]</item>
+        <item>[害羞]</item>
+        <!-- 0102 -->
+        <item>[闭嘴]</item>
+        <item>[睡]</item>
+        <item>[流泪]</item>
+        <item>[尴尬]</item>
+        <item>[发怒]</item>
+        <item>[调皮]</item>
+        <item>[呲牙]</item>
+        <!-- 0103 -->
+        <item>[惊讶]</item>
+        <item>[难过]</item>
+        <item>[酷]</item>
+        <item>[冷汗]</item>
+        <item>[抓狂]</item>
+        <item>[吐]</item>
+        <item>[DEL]</item>
+
+        <!-- 0201 -->
+        <item>[偷笑]</item>
+        <item>[可爱]</item>
+        <item>[白眼]</item>
+        <item>[傲慢]</item>
+        <item>[饥饿]</item>
+        <item>[困]</item>
+        <item>[惊恐]</item>
+        <!-- 0202 -->
+        <item>[流汗]</item>
+        <item>[憨笑]</item>
+        <item>[大兵]</item>
+        <item>[奋斗]</item>
+        <item>[咒骂]</item>
+        <item>[疑问]</item>
+        <item>[嘘&#8230;]</item>
+        <!-- 0203 -->
+        <item>[晕]</item>
+        <item>[折磨]</item>
+        <item>[衰]</item>
+        <item>[骷髅]</item>
+        <item>[敲打]</item>
+        <item>[再见]</item>
+        <item>[DEL]</item>
+
+        <!-- 0301 -->
+        <item>[擦汗]</item>
+        <item>[抠鼻]</item>
+        <item>[鼓掌]</item>
+        <item>[糗大了]</item>
+        <item>[坏笑]</item>
+        <item>[左哼哼]</item>
+        <item>[右哼哼]</item>
+        <!-- 0302 -->
+        <item>[哈欠]</item>
+        <item>[鄙视]</item>
+        <item>[委屈]</item>
+        <item>[快哭了]</item>
+        <item>[阴险]</item>
+        <item>[亲亲]</item>
+        <item>[吓]</item>
+        <!-- 0303 -->
+        <item>[可怜]</item>
+        <item>[菜刀]</item>
+        <item>[西瓜]</item>
+        <item>[啤酒]</item>
+        <item>[篮球]</item>
+        <item>[乒乓]</item>
+        <item>[DEL]</item>
+
+        <!-- 0401 -->
+        <item>[咖啡]</item>
+        <item>[饭]</item>
+        <item>[猎头]</item>
+        <item>[玫瑰]</item>
+        <item>[凋谢]</item>
+        <item>[示爱]</item>
+        <item>[爱心]</item>
+        <!-- 0402 -->
+        <item>[心碎]</item>
+        <item>[蛋糕]</item>
+        <item>[闪电]</item>
+        <item>[炸弹]</item>
+        <item>[刀]</item>
+        <item>[足球]</item>
+        <item>[瓢虫]</item>
+        <!-- 0403 -->
+        <item>[便便]</item>
+        <item>[晚安]</item>
+        <item>[太阳]</item>
+        <item>[礼物]</item>
+        <item>[拥抱]</item>
+        <item>[强]</item>
+        <item>[DEL]</item>
+
+        <!-- 0501 -->
+        <item>[弱]</item>
+        <item>[握手]</item>
+        <item>[胜利]</item>
+        <item>[抱拳]</item>
+        <item>[勾引]</item>
+        <item>[拳头]</item>
+        <item>[差劲]</item>
+        <!-- 0502 -->
+        <item>[爱你]</item>
+        <item>[NO]</item>
+        <item>[OK]</item>
+        <item>[爱情]</item>
+        <item>[飞吻]</item>
+        <item>[跳跳]</item>
+        <item>[发抖]</item>
+        <!-- 0503 -->
+        <item>[怄火]</item>
+        <item>[转圈]</item>
+        <item>[磕头]</item>
+        <item>[回头]</item>
+        <item>[跳绳]</item>
+        <item>[挥手]</item>
+        <item>[DEL]</item>
+
+        <!-- 0601 -->
+        <item>[激动]</item>
+        <item>[街舞]</item>
+        <item>[献吻]</item>
+        <item>[左太极]</item>
+        <item>[右太极]</item>
+        <item>[双喜]</item>
+        <item>[鞭炮]</item>
+        <!-- 0602 -->
+        <item>[灯笼]</item>
+        <item>[发财]</item>
+        <item>[K歌]</item>
+        <item>[购物]</item>
+        <item>[邮件]</item>
+        <item>[帅]</item>
+        <item>[喝彩]</item>
+        <!-- 0603 -->
+        <item>[祈祷]</item>
+        <item>[爆筋]</item>
+        <item>[棒棒糖]</item>
+        <item>[喝奶]</item>
+        <item>[面条]</item>
+        <item>[香蕉]</item>
+        <item>[DEL]</item>
+
+        <!-- 0701 -->
+        <item>[飞机]</item>
+        <item>[开车]</item>
+        <item>[高铁左车头]</item>
+        <item>[车厢]</item>                  
+        <item>[高铁右车头]</item>
+        <item>[多云]</item>
+        <item>[下雨]</item>
+        <!-- 0702 -->
+        <item>[钞票]</item>
+        <item>[熊猫]</item>
+        <item>[灯泡]</item>
+        <item>[风车]</item>
+        <item>[闹钟]</item>
+        <item>[打伞]</item>
+        <item>[彩球]</item>
+        <!-- 0703 -->
+        <item>[钻戒]</item>
+        <item>[沙发]</item>
+        <item>[纸巾]</item>
+        <item>[药]</item>
+        <item>[手枪]</item>
+        <item>[青蛙]</item>
+        <item>[DEL]</item>
+    </string-array>
+
+</resources>

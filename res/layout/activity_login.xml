@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg" >
+
+    <EditText
+        android:id="@+id/login_user_edit"
+        style="@style/common_editbox"
+        android:hint="@string/str_hint_login" />
+
+    <EditText
+        android:id="@+id/login_passwd_edit"
+        style="@style/common_editbox"
+        android:layout_below="@+id/login_user_edit"
+        android:hint="@string/str_hint_passwd"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/login_remember_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_passwd_edit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:button="@drawable/checkbox_bg"
+        android:text="@string/str_remember_pwd" />
+
+    <CheckBox
+        android:id="@+id/login_auto_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_passwd_edit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/login_remember_pwd"
+        android:button="@drawable/checkbox_bg"
+        android:text="@string/str_auto_login" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_remember_pwd"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:onClick="onForgetPasswdClick"
+            android:text="@string/str_forget_passwd"
+            android:textColor="@color/forget_passwd"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_style_green"
+            android:gravity="center"
+            android:onClick="onLoginClick"
+            android:text="@string/str_login"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/group_fold_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="3dip" >
+
+    <ImageView
+        android:id="@+id/friend_list_group_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:background="@drawable/group_unfold_arrow"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/friend_list_group_text"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/friend_list_group_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="3dip"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+</LinearLayout>

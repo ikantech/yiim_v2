@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <integer name="num_cols">1</integer>
+
+    <dimen name="left_menu_account_height">60dip</dimen>
+    <dimen name="left_menu_section_height">30dip</dimen>
+    <dimen name="left_menu_item_height">50.0dip</dimen>
+    <dimen name="sidebar_account_icon_size">45.0dip</dimen>
+    
+    <dimen name="xsmall_padding">4.0dip</dimen>
+    <dimen name="small_padding">6.0dip</dimen>
+    <dimen name="normal_padding">8.0dip</dimen>
+    <dimen name="large_padding">10.0dip</dimen>
+    <dimen name="xlarge_padding">12.0dip</dimen>
+    <dimen name="xxlarge_padding">14.0dip</dimen>
+    <dimen name="xxsmall_margin">2.0dip</dimen>
+    <dimen name="xsmall_margin">4.0dip</dimen>
+    <dimen name="small_margin">6.0dip</dimen>
+    <dimen name="xmiddle_margin">10.0dip</dimen>
+    <dimen name="normal_margin">12.0dip</dimen>
+    <dimen name="xnormal_margin">14.0dip</dimen>
+    <dimen name="xxnormal_margin">16.0dip</dimen>
+    <dimen name="large_margin">18.0dip</dimen>
+    <dimen name="slarge_margin">22.0dip</dimen>
+    <dimen name="xlarge_margin">28.0dip</dimen>
+    <dimen name="xxlarge_margin">40.0dip</dimen>
+    <dimen name="xxxlarge_margin">50.0dip</dimen>
+    <dimen name="text_size_micro">12.0dip</dimen>
+    <dimen name="text_size_small">14.0dip</dimen>
+    <dimen name="text_size_normal">16.0dip</dimen>
+    <dimen name="text_size_big">18.0dip</dimen>
+    <dimen name="text_size_xbig">20.0dip</dimen>
+    <dimen name="text_size_large">22.0dip</dimen>
+    <dimen name="text_size_huge">24.0dip</dimen>
+    <dimen name="text_size_xhuge">26.0dip</dimen>
+    <dimen name="text_size_xxhuge">28.0dip</dimen>
+
+</resources>

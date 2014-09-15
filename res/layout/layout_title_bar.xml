@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="45dip"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/title_bar" >
+
+    <Button
+        android:id="@+id/title_back_btn"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/title_btn_back"
+        android:onClick="onTitleBarLeftBtnClick"
+        android:text="@string/str_back"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/title_left_img_btn"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/title_back_btn"
+        android:background="@drawable/title_btn_right"
+        android:contentDescription="@null"
+        android:onClick="onTitleBarLeftImgBtnClick"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/str_title"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/title_right_btn"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/title_btn_right"
+        android:onClick="onTitleBarRightBtnClick"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/title_right_img_btn"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/title_btn_right"
+        android:contentDescription="@null"
+        android:onClick="onTitleBarRightImgBtnClick"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+</RelativeLayout>

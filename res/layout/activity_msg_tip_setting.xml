@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dip" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/preference_single_item"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_msg_no_tip" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="26dip"
+                android:layout_weight="1" />
+
+            <com.ikantech.yiim.view.SlipSwitch
+                android:id="@+id/msg_no_tip_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/preference_first_item"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_msg_tip_audio" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="26dip"
+                android:layout_weight="1" />
+
+            <com.ikantech.yiim.view.SlipSwitch
+                android:id="@+id/msg_tip_audio_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_last_item"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_msg_tip_vibrator" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="26dip"
+                android:layout_weight="1" />
+
+            <com.ikantech.yiim.view.SlipSwitch
+                android:id="@+id/msg_tip_vibrator_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

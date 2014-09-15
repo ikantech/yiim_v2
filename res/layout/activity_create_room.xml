@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#3b3b3b"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/create_room_icon1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/troop_default_head_4"
+            android:contentDescription="@null"
+            android:onClick="onIconBtnClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/app_panel_shade" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/create_room_icon2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/troop_default_head_1"
+            android:contentDescription="@null"
+            android:onClick="onIconBtnClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/app_panel_shade" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/create_room_icon3"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/troop_default_head_2"
+            android:contentDescription="@null"
+            android:onClick="onIconBtnClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/app_panel_shade" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/create_room_icon4"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/troop_default_head_3"
+            android:contentDescription="@null"
+            android:onClick="onIconBtnClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/app_panel_shade" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dip"
+        android:paddingBottom="16dip" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_first_item"
+            android:clickable="true"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_room_name" />
+
+            <EditText
+                android:id="@+id/create_room_room_name"
+                style="@style/preference_input_lab_text"
+                android:layout_height="26dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/str_hint_room_name"
+                android:inputType="text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="16dip"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/mm_submenu"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_item"
+            android:clickable="true"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_room_sign" />
+
+            <EditText
+                android:id="@+id/create_room_room_sign"
+                style="@style/preference_input_lab_text"
+                android:layout_height="26dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/str_hint_room_sign"
+                android:inputType="text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="16dip"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/mm_submenu"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_last_item"
+            android:clickable="true"
+            android:onClick="onInviteFriendClick"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/str_invite_friend" />
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:layout_height="26dip"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="16dip"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/mm_submenu" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

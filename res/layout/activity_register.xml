@@ -1,0 +1,201 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dip" >
+
+        <TextView
+            style="@style/preference_input_lab_text"
+            android:layout_marginTop="6dip"
+            android:padding="6dip"
+            android:text="@string/str_required"
+            android:textColor="@color/forget_passwd" />
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_first_item"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_user_name" />
+
+            <EditText
+                android:id="@+id/register_user_name_edit"
+                style="@style/preference_editbox"
+                android:hint="@string/str_hint_user_name"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_item"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_nick_name" />
+
+            <EditText
+                android:id="@+id/register_nick_name_edit"
+                style="@style/preference_editbox"
+                android:hint="@string/str_hint_nick_name"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_item"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_passwd" />
+
+            <EditText
+                android:id="@+id/register_passwd_edit"
+                style="@style/preference_editbox"
+                android:hint="@string/str_hint_passwd"
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_item"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_passwd_confirm" />
+
+            <EditText
+                android:id="@+id/register_passwd_confirm_edit"
+                style="@style/preference_editbox"
+                android:hint="@string/str_hint_passwd_confirm"
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_item"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_sex" />
+
+            <RadioGroup
+                android:id="@+id/register_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20dp"
+                android:checkedButton="@+id/register_sex_female"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/register_sex_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_male"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/register_sex_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/str_female"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_last_item"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_birthday" />
+
+            <EditText
+                android:id="@+id/register_birthday_edit"
+                style="@style/preference_editbox"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/str_hint_select_birthday"
+                android:inputType="date"
+                android:onClick="onBirthdayClick" />
+        </TableRow>
+
+        <TextView
+            style="@style/preference_input_lab_text"
+            android:layout_marginTop="6dip"
+            android:padding="6dip"
+            android:text="@string/str_optional"
+            android:textColor="@color/forget_passwd" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_first_item"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_email" />
+
+            <EditText
+                android:id="@+id/register_email_edit"
+                style="@style/preference_editbox"
+                android:hint="@string/str_hint_email"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_item"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_contry" />
+
+            <EditText
+                android:id="@+id/register_contry_edit"
+                style="@style/preference_editbox"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_last_item"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_province" />
+
+            <EditText
+                android:id="@+id/register_district_edit"
+                style="@style/preference_editbox"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

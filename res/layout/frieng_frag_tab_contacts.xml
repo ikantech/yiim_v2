@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tab_contacts_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/mm_listitem"
+            ptr:ptrMode="pullDownFromTop" />
+
+        <include
+            android:id="@+id/friend_list_group_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/friend_list_group_item"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

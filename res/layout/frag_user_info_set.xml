@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frag_user_info_set"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg"
+    ptr:ptrMode="pullDownFromTop" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dip" >
+
+        <TableRow
+            android:id="@+id/user_info_set_pic_root"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/preference_first_item"
+            android:clickable="true"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_user_icon" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="16dip" >
+
+                <com.ikantech.support.widget.YiRoundImageView
+                    android:id="@+id/user_info_set_pic"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:clickable="true"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mini_avatar_shadow" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="16dip"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/mm_submenu" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/user_info_set_nick_root"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_item"
+            android:clickable="true"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_nick_name" />
+
+            <TextView
+                android:id="@+id/user_info_set_nick"
+                style="@style/preference_input_lab_text"
+                android:layout_height="26dip"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="16dip"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/mm_submenu" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_last_item"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_mm_no" />
+
+            <TextView
+                android:id="@+id/user_info_set_userid"
+                style="@style/preference_input_lab_text"
+                android:layout_height="26dip"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="16dip"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/mm_submenu"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/preference_first_item"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_sex" />
+
+            <TextView
+                android:id="@+id/user_info_set_sex"
+                style="@style/preference_input_lab_text"
+                android:layout_height="26dip"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="16dip"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/mm_submenu"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/user_info_set_district_root"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_item"
+            android:clickable="true"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_district" />
+
+            <TextView
+                android:id="@+id/user_info_set_district"
+                style="@style/preference_input_lab_text"
+                android:layout_height="26dip"
+                android:layout_weight="1"
+                android:hint="@string/str_hint_district" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="16dip"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/mm_submenu" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/user_info_set_sign_root"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_last_item"
+            android:clickable="true"
+            android:onClick="onSignBtnClick"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/preference_input_lab_text"
+                android:text="@string/input_lab_user_sign" />
+
+            <TextView
+                android:id="@+id/user_info_set_sign"
+                style="@style/preference_input_lab_text"
+                android:layout_height="26dip"
+                android:layout_weight="1"
+                android:hint="@string/str_hint_user_sign" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="16dip"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/mm_submenu" />
+        </TableRow>
+    </TableLayout>
+
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

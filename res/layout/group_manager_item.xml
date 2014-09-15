@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/mm_listitem"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="9dp"
+    android:paddingRight="9dp" >
+
+    <ImageButton
+        android:id="@+id/group_manager_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/setting_account_del1" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/group_manager_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/extension_qrcode_more" />
+
+    <ImageView
+        android:id="@+id/ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/common_ratio_select"
+        android:visibility="gone" />
+
+</LinearLayout>

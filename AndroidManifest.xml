@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ikantech.yiim"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="11" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.ikantech.yiim.app.YiIMApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ikantech.yiim.ui.MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.ikantech.yiim.ui.SplashActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ikantech.yiim.ui.LoginActivity"
+            android:label="@string/str_login"
+            android:theme="@style/custom_title" />
+        <activity
+            android:name="com.ikantech.yiim.ui.RegisterActivity"
+            android:label="@string/str_register"
+            android:theme="@style/custom_title" />
+        <activity
+            android:name="com.ikantech.yiim.ui.ChatActivity"
+            android:label="@string/str_title"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.ikantech.yiim.ui.UserInfoActivity"
+            android:label="@string/str_user_info"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.ikantech.yiim.ui.CommonInputActivity"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.ikantech.yiim.ui.FriendAddActivity"
+            android:label="@string/str_add_contact"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.ikantech.yiim.ui.GroupManagerActivity"
+            android:label="@string/str_group_manager"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.ikantech.yiim.ui.ViewChatRecordActivity"
+            android:label="@string/str_view_chat_record"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.ikantech.yiim.ui.MsgTipSettingActivity"
+            android:label="@string/title_activity_msg_tip_setting"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.ikantech.yiim.ui.MultiRoomDiscoverActivity"
+            android:label="@string/title_activity_multi_room_discover"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.ikantech.yiim.ui.CreateRoomActivity"
+            android:label="@string/title_activity_create_room"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.ikantech.yiim.ui.RoomInfoActivity"
+            android:label="@string/title_activity_room_info"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.ikantech.yiim.ui.RoomMemberActivity"
+            android:label="@string/title_activity_room_member"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.ikantech.yiim.ui.InviteFriendActivity"
+            android:label="@string/str_invite_friend"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.ikantech.yiim.ui.CallActivity"
+            android:label="@string/title_activity_call"
+            android:theme="@style/custom_title" >
+            <intent-filter>
+                <action android:name="com.ikantech.xmppsupoort.jingle.ACTION_CALL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="xmpp" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.ikantech.support.service.YiLocalService"
+            android:exported="false" />
+        <service
+            android:name="com.ikantech.yiim.service.XmppService"
+            android:exported="false" />
+
+        <provider
+            android:name="com.ikantech.yiim.provider.XmppProvider"
+            android:authorities="com.chyitech.yiim.provider.XmppProvider"
+            android:exported="false" >
+        </provider>
+    </application>
+
+</manifest>

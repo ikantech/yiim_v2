@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    android:padding="16dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.ikantech.support.widget.YiRoundImageView
+            android:id="@+id/call_avatar"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/call_username"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:ellipsize="marquee"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/call_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="6dip"
+            android:gravity="center"
+            android:text="Message pour savoir ou en est la conversation" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/call_accept_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="9dip"
+        android:background="@drawable/btn_style_green"
+        android:text="@string/string_answer"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:visible="true" />
+
+    <Button
+        android:id="@+id/call_cancel_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="9dip"
+        android:background="@drawable/btn_style_red"
+        android:text="@string/string_endcall"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</LinearLayout>

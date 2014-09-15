@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/call_speaker_on" android:visible="true"
+		android:title="~ speaker on ~" android:icon="@android:drawable/ic_lock_silent_mode_off" />
+	<item android:id="@+id/call_speaker_off" android:visible="true"
+		android:title="~ speaker off ~" android:icon="@android:drawable/ic_lock_silent_mode" />
+	<item android:id="@+id/call_hold_on" android:visible="true"
+		android:title="~ hold on ~ " android:icon="@android:drawable/ic_lock_lock" />
+	<item android:id="@+id/call_hold_off" android:visible="true"
+		android:title="~ hold off ~ " android:icon="@android:drawable/ic_menu_call" /> 
+</menu>

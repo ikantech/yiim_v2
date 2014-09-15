@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/left_menu_bg"
+    android:orientation="vertical" >
+
+    <com.ikantech.yiim.view.AccountRootView
+        android:id="@+id/main_menu_account_root"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/left_menu_account_height"
+        android:background="@drawable/side_menu_account_bg_selector"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/main_menu_left_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:paddingLeft="@dimen/small_padding"
+            android:src="@drawable/aa_prev" />
+
+        <ImageView
+            android:id="@+id/main_menu_avatar"
+            android:layout_width="@dimen/sidebar_account_icon_size"
+            android:layout_height="@dimen/sidebar_account_icon_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_toRightOf="@+id/main_menu_left_arrow"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/avatar_default_circle" />
+
+        <ImageView
+            android:layout_width="@dimen/sidebar_account_icon_size"
+            android:layout_height="@dimen/sidebar_account_icon_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_toRightOf="@+id/main_menu_left_arrow"
+            android:background="@drawable/side_menu_avatar_mask_selector"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/main_menu_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:paddingLeft="@dimen/small_padding"
+            android:paddingRight="@dimen/small_padding"
+            android:src="@drawable/aa_next" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/main_menu_right_arrow"
+            android:layout_toRightOf="@id/main_menu_avatar"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/main_menu_account_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/xsmall_margin"
+                android:layout_weight="2.0"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/left_menu_category_text_color"
+                android:textSize="@dimen/text_size_xbig" />
+
+            <TextView
+                android:id="@+id/main_menu_account_signature"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_marginBottom="@dimen/normal_margin"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:singleLine="true"
+                android:textColor="@color/left_menu_category_text_color"
+                android:textSize="@dimen/text_size_micro" />
+        </LinearLayout>
+    </com.ikantech.yiim.view.AccountRootView>
+
+    <za.co.immedia.pinnedheaderlistview.PinnedHeaderListView
+        android:id="@+id/main_menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@null"
+        android:divider="@drawable/aa_line_black"
+        android:fadingEdge="@null"
+        android:scrollbars="none" />
+
+</LinearLayout>
